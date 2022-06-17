@@ -17,7 +17,13 @@ app = Client(
     )
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"ሰላም😊 **{message.from_user.first_name }** \n\n እኔ😷 የተለያየ ቋንቋ መተርጎምያ ቦት ነኝ \n የፈለጉትን ቋንቋ Text ወደ መረጡት ቋንቋ ተረጉማለዉ😎__",reply_to_message_id = message.id , reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Check Out The CHANNEL for more bots " ,url="https://t.me/Ethiopiansproject") ],               [InlineKeyboardButton(" are you Dev' or interested Click here ", url="https://t.me/Ethiopians_project ") ]   ]  ) )
+	await message.reply_text(text =f"ሰላም😊 **{message.from_user.first_name }** \n\n እኔ😷 የተለያየ ቋንቋ መተርጎምያ ቦት ነኝ \n የፈለጉትን ቋንቋ Text ወደ መረጡት ቋንቋ ተረጉማለዉ😎_",reply_to_message_id = message.id , reply_markup=InlineKeyboardMarkup
+				 (
+					 [ [ InlineKeyboardButton("Check Out The CHANNEL for more bots " ,url="https://t.me/Ethiopiansproject ") ] , 
+					   [InlineKeyboardButton(" are you Dev or interested Click here ", url="https://t.me/Ethiopians_project ") ]
+					 ] 
+				 ) 
+				)
                   
 
 
